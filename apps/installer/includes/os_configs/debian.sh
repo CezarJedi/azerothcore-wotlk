@@ -37,10 +37,10 @@ MYSQL_APT_CONFIG_VERSION=0.8.36-1
 # # # # #
 mkdir -p "$VAR_PATH/mysqlpackages" && cd "$VAR_PATH/mysqlpackages"
 # Download
-wget "https://dev.mysql.com/get/mysql-apt-config_${MYSQL_APT_CONFIG_VERSION}_all.deb"
+# wget "https://dev.mysql.com/get/mysql-apt-config_${MYSQL_APT_CONFIG_VERSION}_all.deb"
 # Install
-sudo DEBIAN_FRONTEND="noninteractive" dpkg -i ./mysql-apt-config_${MYSQL_APT_CONFIG_VERSION}_all.deb
-sudo apt update
-sudo DEBIAN_FRONTEND="noninteractive" apt install -y mysql-server libmysqlclient-dev
+# sudo DEBIAN_FRONTEND="noninteractive" dpkg -i ./mysql-apt-config_${MYSQL_APT_CONFIG_VERSION}_all.deb
+# sudo apt update
+# sudo DEBIAN_FRONTEND="noninteractive" apt install -y mysql-server libmysqlclient-dev
 # Cleanup
 rm -v mysql-apt-config_${MYSQL_APT_CONFIG_VERSION}_all* && unset MYSQL_APT_CONFIG_VERSION

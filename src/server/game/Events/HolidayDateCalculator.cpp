@@ -41,7 +41,7 @@ static const std::vector<HolidayRule> HolidayRules = {
     { HOLIDAY_CHILDRENS_WEEK, HolidayCalculationType::WEEKDAY_ON_OR_AFTER, 4, 25, static_cast<int>(Weekday::MONDAY), 0 },
 
     // Midsummer Fire Festival: Fixed Jun 21
-    { HOLIDAY_FIRE_FESTIVAL, HolidayCalculationType::FIXED_DATE, 6, 21, 0, 0 },
+    { HOLIDAY_FIRE_FESTIVAL, HolidayCalculationType::FIXED_DATE, 6, 1, 0, 0 }, // aici am schimbat din: { HOLIDAY_FIRE_FESTIVAL, HolidayCalculationType::FIXED_DATE, 6, 21, 0, 0 },
 
     // Fireworks Spectacular: Fixed Jul 4
     { HOLIDAY_FIREWORKS_SPECTACULAR, HolidayCalculationType::FIXED_DATE, 7, 4, 0, 0 },
